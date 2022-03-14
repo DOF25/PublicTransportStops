@@ -18,7 +18,8 @@ final class DetailPresenter: DetailViewOutput {
     }
     //MARK: - DetailViewOutput
     func requestStopDetails() {
-        networkManager.requestDetail(for: stop.id) { [weak self] result in
+        let url = URLPrepare.prepareDetailURL(id: stop.id)
+        networkManager.requestData(url: url){ [weak self] (result: Result<StopDetails, Error>) in
             guard let self = self else { return }
             switch result {
             case .failure(let error):

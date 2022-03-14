@@ -18,14 +18,14 @@ final class StopsListPresenter: StopsListOutput {
 
     //MARK: - StopsListOutput
     func requestStopsList() {
-        self.networkManager.requestStopsList { [weak self ] result in
+        let url = URLPrepare.prepareStopListURL()
+        self.networkManager.requestData(url: url) { [weak self] (result: Result<ServerResponse, Error>) in
             guard let self = self else { return }
             switch result {
             case .failure(let error):
                 print(error)
-                self.view.stops = []
-            case .success(let stops):
-                self.view.stops = stops
+            case .success(let response):
+                self.view.stops = response.data
                 DispatchQueue.main.async {
                     self.view.reloadData()
                 }

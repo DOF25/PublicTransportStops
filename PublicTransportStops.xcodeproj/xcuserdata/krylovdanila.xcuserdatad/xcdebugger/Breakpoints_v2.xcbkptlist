@@ -14,9 +14,9 @@
             filePath = "PublicTransportStops/Core/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "requestStopsList(completion:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "requestStopsList(url:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

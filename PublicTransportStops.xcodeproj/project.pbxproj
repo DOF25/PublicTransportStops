@@ -34,6 +34,7 @@
 		E723DA5527CD22550073781C /* DetailViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723DA5427CD22550073781C /* DetailViewIO.swift */; };
 		E723DA5727CD23290073781C /* RoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723DA5627CD23290073781C /* RoughtCell.swift */; };
 		E723DA5927CD2A520073781C /* DetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723DA5827CD2A520073781C /* DetailViewOutput.swift */; };
+		E7F4CE8A27DFDA7100A6DB8B /* URLPrepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4CE8927DFDA7100A6DB8B /* URLPrepare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		E723DA5427CD22550073781C /* DetailViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewIO.swift; sourceTree = "<group>"; };
 		E723DA5627CD23290073781C /* RoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoughtCell.swift; sourceTree = "<group>"; };
 		E723DA5827CD2A520073781C /* DetailViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewOutput.swift; sourceTree = "<group>"; };
+		E7F4CE8927DFDA7100A6DB8B /* URLPrepare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPrepare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		E723DA0A27CBF00E0073781C /* PublicTransportStops */ = {
 			isa = PBXGroup;
 			children = (
+				E7F4CE8827DFDA5F00A6DB8B /* URLManager */,
 				E723DA3527CC0C960073781C /* Builder */,
 				E723DA2527CBF3B70073781C /* Core */,
 				E723DA4627CCDF300073781C /* DetailController */,
@@ -295,6 +298,14 @@
 			path = StopDetails;
 			sourceTree = "<group>";
 		};
+		E7F4CE8827DFDA5F00A6DB8B /* URLManager */ = {
+			isa = PBXGroup;
+			children = (
+				E7F4CE8927DFDA7100A6DB8B /* URLPrepare.swift */,
+			);
+			path = URLManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -412,6 +423,7 @@
 				E723DA4E27CCEAEE0073781C /* DetailView.swift in Sources */,
 				E723DA2A27CBF6400073781C /* NetworkManager.swift in Sources */,
 				E723DA5227CCEEFD0073781C /* DetailPresenter.swift in Sources */,
+				E7F4CE8A27DFDA7100A6DB8B /* URLPrepare.swift in Sources */,
 				E723DA2E27CBFC270073781C /* Stops.swift in Sources */,
 				E723DA3727CC0CA50073781C /* Builder.swift in Sources */,
 				E723DA3F27CCB1040073781C /* MapView.swift in Sources */,
